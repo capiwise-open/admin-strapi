@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcast_carousels",
+  "info": {
+    "singularName": "podcast-carousel",
+    "pluralName": "podcast-carousels",
+    "displayName": "Podcast carousel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "url": {
+      "type": "text"
+    },
+    "banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experts_investors",
+  "info": {
+    "singularName": "experts-investor",
+    "pluralName": "experts-investors",
+    "displayName": "Experts investor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "books": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::book.book"
+    },
+    "name": {
+      "type": "string"
+    },
+    "about": {
+      "type": "text"
+    },
+    "net_worth": {
+      "type": "integer"
+    }
+  }
+}

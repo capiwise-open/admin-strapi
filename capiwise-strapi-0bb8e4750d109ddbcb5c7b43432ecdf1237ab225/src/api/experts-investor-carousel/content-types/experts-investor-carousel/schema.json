@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experts_investor_carousels",
+  "info": {
+    "singularName": "experts-investor-carousel",
+    "pluralName": "experts-investor-carousels",
+    "displayName": "Experts investor carousel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    }
+  }
+}

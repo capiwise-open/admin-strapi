@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_carousel_course_carousels",
+  "info": {
+    "displayName": "Course Carousel",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

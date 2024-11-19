@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audio_book_carousels",
+  "info": {
+    "singularName": "audio-book-carousel",
+    "pluralName": "audio-book-carousels",
+    "displayName": "Audio book carousel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    }
+  }
+}

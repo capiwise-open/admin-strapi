@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_carousels",
+  "info": {
+    "singularName": "course-carousel",
+    "pluralName": "course-carousels",
+    "displayName": "Course carousel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    }
+  }
+}

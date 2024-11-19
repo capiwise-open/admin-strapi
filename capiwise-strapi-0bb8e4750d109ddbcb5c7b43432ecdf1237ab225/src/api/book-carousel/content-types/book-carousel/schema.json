@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_carousels",
+  "info": {
+    "singularName": "book-carousel",
+    "pluralName": "book-carousels",
+    "displayName": "Book carousel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

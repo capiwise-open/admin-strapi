@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_categories",
+  "info": {
+    "singularName": "book-category",
+    "pluralName": "book-categories",
+    "displayName": "Book category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "thumb": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "related_books": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::book.book",
+      "mappedBy": "book_category"
+    }
+  }
+}

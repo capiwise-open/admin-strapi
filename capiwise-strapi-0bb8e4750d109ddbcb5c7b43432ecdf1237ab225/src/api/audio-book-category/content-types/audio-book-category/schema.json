@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audio_book_categories",
+  "info": {
+    "singularName": "audio-book-category",
+    "pluralName": "audio-book-categories",
+    "displayName": "Audio book category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "related_books": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::audio-book.audio-book",
+      "mappedBy": "audio_book_category"
+    },
+    "title": {
+      "type": "string"
+    },
+    "thumb": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
